@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="Edward-Projects"
+          fetch="ssh://git@github.com/Edward-Projects"
+          sync-c="true"
+          sync-tags="false"
+          revision="tsukasa" />
+
+  <!-- AOSPA -->
+  <remote name="blobs"
+          fetch="https://github.com/ThankYouMario"
+          revision="topaz"
+          clone-depth="1" />
+
+  <remote name="blobs-gitlab"
+          fetch="https://gitlab.com/ThankYouMario"
+          revision="topaz"
+          clone-depth="1" />
+
+  <!-- Device -->
+  <project name="android_device_xiaomi_lisa" path="device/xiaomi/lisa" remote="Edward-Projects" revision="tsukasa"/>
+
+  <!-- Kernel -->
+  <project name="AOSPA/android_kernel_xiaomi_lahaina" path="kernel/xiaomi/lahaina" remote="github" revision="topaz"/>
+
+  <!-- HALs -->
+  <project name="AOSPA/android_hardware_qcom_audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="github" revision="topaz-888" />
+  <project name="AOSPA/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="topaz-888" />
+  <project name="AOSPA/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="topaz-legacy-component" />
+  <project name="AOSPA/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="topaz-888" />
+  <project name="AOSPA/android_vendor_nxp_opensource_halimpl" path="vendor/nxp/opensource/halimpl" remote="github" revision="topaz-SN100X-legacy" />
+  <project name="AOSPA/android_vendor_nxp_opensource_hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="github" revision="topaz-SN100X-legacy" />
+
+  <!-- Proprietary blobs-->
+  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="blobs" revision="topaz" />
+  <project name="proprietary_vendor_xiaomi_camera" path="vendor/xiaomi/camera" remote="blobs-gitlab" revision="topaz-leica" />
+  <project name="proprietary_vendor_xiaomi_firmware" path="vendor/xiaomi/firmware" remote="blobs-gitlab" revision="topaz" />
+
+</manifest>
