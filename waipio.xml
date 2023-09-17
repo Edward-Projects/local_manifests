@@ -5,7 +5,7 @@
           sync-c="true"
           sync-tags="false"
           review="codelinaro.org"
-          revision="refs/tags/KERNEL.PLATFORM.1.0.r1-15600-kernel.0" />
+          revision="refs/tags/KERNEL.PLATFORM.1.0.r1-16000-kernel.0" />
 
   <remote name="clo_vendor_waipio"
           fetch="https://git.codelinaro.org/clo/la"
